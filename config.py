@@ -1,5 +1,5 @@
 settings = {
-    "token": "MTA0NzE4MDYxNjUwNjAxOTg4Mg.GXe8OL.JvS8mGmmUucXxJnTHKAHs9xfk99tyHphuONl7I",
+    "token": "",
     "prefix": "a.",
     "codename": "Alex",
     "version": "0.1.0",
