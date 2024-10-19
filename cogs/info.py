@@ -15,7 +15,6 @@ class info(commands.Cog):
     @commands.slash_command(name="info", description="Получите информацию о Сервере/Боте")
     async def info(self, inter:disnake.CommandInteraction, action: str = commands.Param(name="информация", description="Какую информацию вы хотите получить?", choices=infos)):
         if action == "bot":
-            #await inter.response.send_message(f"команда `{action}` пока не доступна")
             emb = disnake.Embed(title="__**Информация**__:")
             emb.add_field(name='<:memory:1095338273011941496> Использование ОЗУ', value=f'`{round(psutil.virtual_memory().used/1024/1024)}MB/{round(psutil.virtual_memory().total/1024/1024)}MB`', inline=False)
             emb.add_field(name="📁 Пользователей", value=f'`{len(inter.bot.users)} Пользователей`', inline=True)
